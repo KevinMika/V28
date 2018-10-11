@@ -14,7 +14,78 @@ wave function for an atom in the one-electron approximation can be represented a
 \end{equation}
 leading to the expression
 \begin{equation}
-  \mu_z=-\frac{e_0\hbar m}{2m_0}
+  \mu_B=-\frac{e_0\hbar m}{2m_0}
 \end{equation}
 which describes the relationship between magnetic
 and the angular momentum. $m\hbar$ is the angular momentum $l$ and the product of the natural constants is called Bohr magneton $\mu_B$.
+\subsection{Spin relative to an external magnetic field}
+If an external magnetic field is applied, the energy levels are split (Zeeman effect).
+In addition, a force
+\begin{equation}
+  F_Z=\mu_{S,Z}\frac{\partial B_Z}{\partial Z}
+\end{equation}
+acts on the magnetic moments, thus deflecting the beam.
+depending on the orientation of the moment relative
+to the external magnetic field. The spin quantum number is calculated as
+then according to
+\begin{equation}
+  2s+1=2
+\end{equation}
+This is due to the fact that the components of a vector are at most equal to their
+amount, the Orientation quantum number $m$ only assume the following values:
+\begin{equation}
+  m=0,\pm1,\pm2,...,\pm l
+\end{equation}
+So there are only $2l+1$ settings for the Orientation quantum number $m$, where $l$ is the angular momentum.
+Therefore, the following relationship applies to the Z-component of the spin:
+\begin{equation}
+  S_Z=m_s\hbar=\pm\frac{\hbar}{2}.
+\end{equation}
+The magnetic moment $\mu$ of the spin is then
+\begin{equation}
+  \mu_{S_Z}=-\frac{g\cdot\mu_B}{2}.
+\end{equation}
+$g$ is referred to as the gyromagnetic ratio and may assume a value other than 1.
+\subsection{Electron paramagnetic resonance}
+The electron paramagnetic resonance method is used to determine the gyromagnetic ratio.
+With an external magnetic field, the simple energy levels are converted into two sub-levels,
+where the energy difference between the two levels is
+\begin{equation}
+  \increment E=g\mu_B B.
+  \label{eq:ediff}
+\end{equation}
+If now energy, which corresponds to the energy difference,
+is supplied to the system in form of light quanta, then \ref{eq:ediff} results to
+\begin{equation}
+  h\nu=g\mu_B B.
+\end{equation}
+The electrons are now able to go into the higher energy state and their spin is reversed.
+\begin{figure}
+  \centering
+  \begin{circuitikz}
+    \draw[->,brown] (1,2)--(1,0);
+    \draw[->,brown] (2,2)--(2,0);
+    \draw[->,brown] (3,2)--(3,0);
+    \node at (3.3,0){$H$};
+    \draw[->] (-1,0)--(-1,2);
+    \draw (-1.1,1.5)--(-0.9,1.5);
+    \draw (-1.1,0.7)--(-0.9,0.7);
+    \node at (-1.3,2.3){$E$};
+    \node[font=\small] at (-1.4,1.5){$E_{\downarrow}$};
+    \node[font=\small] at (-1.4,0.7){$E_{\uparrow}$};
+    \draw[->] (1,0.7)--(1.2,0.9);
+    \draw[->] (1,1.5)--(1.2,1.3);
+    \draw[decorate,decoration={brace,amplitude=6pt}](-1,1.5)--(-1,0.7);
+    \node[font=\small] at (-0.1,1.1){$\increment E=h\nu$};
+  \end{circuitikz}
+  \caption{Energy levels $E_{\downarrow}$ and $E_{\uparrow}$ split by an external magnetic field $H$. $\increment E$ can be modified by varying "H".}
+  \label{}
+\end{figure}
+The sample to be investigated is wrapped in a coil which is connected to a bridge circuit and placed in a Helmholtz coil.
+The magnetic field of a Helmholtz coil can be determined with
+\begin{equation}
+  B(I)=\frac{8\mu_0 n I}{\sqrt{125}\cdot r}
+\end{equation}
+where $\mu_0$ is the Vacuum permeability. A high-frequency voltage is applied to the bridge circuit.
+The coil in which the sample is located serves to supply energy,
+while the Helmholtz coil generates the external, homogeneous magnetic field.
