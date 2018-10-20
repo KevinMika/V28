@@ -1,5 +1,10 @@
 \section{Execution}
 The first step is to set up the apparatus according to Figure \ref{fig:aufbau}.
+The frequency of the supply voltage for the bridge circuit should meet the condition
+\begin{equation}
+  \nu_{OSC}+\nu_{ZF}=\nu_e.
+\end{equation}
+While $\nu_{ZF}=\SI{552}{\hertz}$, $\nu_{OSC}$ can be set to fixed values and $\nu_e$ can be adjusted accordingly.
 The superheterodyne receiver is adjusted by slowly increasing the ZF-amplifier until a voltage is visible.
 The preamplifier is then set up so that the output voltage becomes maximum.
 Then the bridge is adjusted. Then this process is repeated until the maximum ZF-gain is reached.
@@ -68,4 +73,4 @@ Then the bridge is adjusted. Then this process is repeated until the maximum ZF-
 \end{figure}
 Then the ramp generator is switched on. A resonance curve should now be visible, which is recorded by the XY recorder.
 The required current for the resonance can be read from the drawing and thus the gyromagnetic ratio of the sample can be determined
-according to the formula \ref{eq:gyro}. The magnetic field can be determined with formula \ref{eq:mfeld}.
+according to the formula \ref{eq:gyro}. The magnetic field can be determined with formula \ref{eq:mfield}.

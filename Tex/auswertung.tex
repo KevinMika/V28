@@ -1,21 +1,25 @@
 \section{Evaluation}
+Formula \ref{eq:gyro} can be converted to g:
+\begin{equation}
+  g=\frac{h\nu}{B\mu_{B}}
+\end{equation}
+with $h=6.626070040\cdot10^{-34}\si{\joule\second}$ and $\mu_B=927.4009994\cdot10^{-26}\si{\joule\per\tesla}$.
+The values can be taken from Table \ref{tab:messwerte}.
+The error is determined by the Gaussian distribution, since both $h$ and $\mu_B$ have errors:
+\begin{equation}
+  \increment g = \sqrt{\frac{\partial g}{\partial h}+\frac{\partial g}{\partial \mu_B}}
+\end{equation}
+However, the error is $10^{-7}$ smaller than the value and can therefore be ignored.
 \begin{table}
   \centering
-  \caption{}
-  \csvreader[tabular=c|c|c,
+  \caption{Gyromagnetic ratio determined for different frequencies $\nu_e$ according to the electron spin resonance method.
+  $x$ is the position of the resonance current on the XY recorder,
+  $B$ is the magnetic field of the Helmholtz coil and the gyromagnetic ratio $g$ and the error $\increment g$.}
+  \csvreader[tabular=c|c|c|c|c,
   head=false,
-  table head= $N$ &  $\increment n\cdot10^{-4}$ & $\pm\increment n\cdot10^{-4}$ \\\midrule,
+  table head= $\nu_e\:/\:\si{\mega\hertz}$ & $x\:/\:\si{\centi\meter}$ & $B\:/\:\si{\milli\tesla}$ & $g\:/\:\si{\hertz\second}$ & $\increment g$ \\\midrule,
   late after line= \\]
-  {Messdaten}{}{$\num{\csvcoli}}$ & $\num{\csvcolii}}$ & $\num{\csvcoliii}}$
-  \label{tab:messwerte2}
+  {messwerte.csv}{1=\eins, 2=\zwei, 3=\drei, 4=\vier, 5=\funf}{$\num{\eins}$ & $\num{\zwei}$ & $\num{\drei}$ & $\num{\vier}$ & $\num{\funf}$}
+  \label{tab:messwerte}
 \end{table}
-\begin{table}
-  \centering
-  \caption{}
-  \csvreader[tabular=c|c|c,
-  head=false,
-  table head= $N$ &  $\increment n\cdot10^{-4}$ & $\pm\increment n\cdot10^{-4}$ \\\midrule,
-  late after line= \\]
-  {Messdaten}{}{$\num{\csvcoli}}$ & $\num{\csvcolii}}$ & $\num{\csvcoliii}}$
-  \label{tab:messwerte2}
-\end{table}
+The average value is as follows:
