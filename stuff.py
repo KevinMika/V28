@@ -37,7 +37,7 @@ xrund = ["%.1f" % elem for elem in x1]
 Brund = ["%.2f" % elem for elem in B1]
 gwertrund = ["%.2f" % elem for elem in gwert]
 gerrrund= ["%.2f" % elem for elem in gerr]
-#von Noah kopiert, kp wieso es funktioniert aber es funktioniert
+#von Noah kopiert, kp wieso es funktioniert aber es funktioniert, Nachtrag: jetzt versteh ich den code lol
 with open("messwerte.csv", "w") as f:
     writer= csv.writer(f)
     writer.writerows(zip(frund,xrund,Brund,gwertrund,gerrrund))
