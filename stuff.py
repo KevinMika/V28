@@ -17,10 +17,10 @@ def B(i):
 #Konstanten
 h = ufloat(6.626070040*10**(-34),0.000000081*10**(-34)) #https://physics.nist.gov/cgi-bin/cuu/Value?h
 uB= ufloat(927.4009994*10**(-26),0.0000057*10**(-26))#https://physics.nist.gov/cgi-bin/cuu/Value?mub
-#h = 6.626070040*10**(-34)
-#uB= 927.4009994*10**(-26)
+#cm -> mA
+y = x*50*10**(-3)
 #gyromagnetisches Verhätnis
-g = (h*f)/(uB*B(x))
+g = (h*f)/(uB*B(y))
 #print(g) #zum sehen der Daten, nur testweise
 #Splitten von g, damit python schreiben kann
 gwert = unp.nominal_values(g)
@@ -30,7 +30,7 @@ gerr = unp.std_devs(g)
 # umrechnungen wieder rückgängig
 f1 = f*10**(-6)
 x1 = x*10**(2)
-B1 = B(x)*10**3
+B1 = B(y)*10**6
 #runden zum schreiben
 frund = ["%.3f" % elem for elem in f1]
 xrund = ["%.1f" % elem for elem in x1]
