@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 #Hol dir die scheiSS Daten aus der csv
 f = np.genfromtxt("messwerte.csv",delimiter=",",unpack=True,usecols=0)*10**6 #frequenzen halt,umrechung Mhz->hz
-x = np.genfromtxt("messwerte.csv",delimiter=",",unpack=True,usecols=1)*10**(-2) #umrechnung cm->m
+x = np.genfromtxt("messwerte.csv",delimiter=",",unpack=True,usecols=1)
 #Bfeld für Helmholtz
 def B(i):
     n = 156
@@ -29,8 +29,8 @@ gerr = unp.std_devs(g)
 #print(gerr)
 # umrechnungen wieder rückgängig
 f1 = f*10**(-6)
-x1 = x*10**(2)
-B1 = B(y)*10**6
+x1 = x
+B1 = B(y)*10**3
 #runden zum schreiben
 frund = ["%.3f" % elem for elem in f1]
 xrund = ["%.1f" % elem for elem in x1]
@@ -41,3 +41,5 @@ gerrrund= ["%.2f" % elem for elem in gerr]
 with open("messwerte.csv", "w") as f:
     writer= csv.writer(f)
     writer.writerows(zip(frund,xrund,Brund,gwertrund,gerrrund))
+print(np.mean(gwert))
+print(np.std(gwert))
