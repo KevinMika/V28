@@ -19,6 +19,9 @@ h = ufloat(6.626070040*10**(-34),0.000000081*10**(-34)) #https://physics.nist.go
 uB= ufloat(927.4009994*10**(-26),0.0000057*10**(-26))#https://physics.nist.gov/cgi-bin/cuu/Value?mub
 #cm -> mA
 y = x*50*10**(-3)
+#print weil wollte was nachschauen
+print(x)
+print(y)
 #gyromagnetisches Verhätnis
 g = (h*f)/(uB*B(y))
 #print(g) #zum sehen der Daten, nur testweise

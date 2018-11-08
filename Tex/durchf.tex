@@ -4,8 +4,11 @@ The frequency of the supply voltage for the bridge circuit should meet the condi
 \begin{equation}
   \nu_{OSC}+\nu_{ZF}=\nu_e.
 \end{equation}
-While $\nu_{ZF}=\SI{552}{\hertz}$, $\nu_{OSC}$ can be set to fixed values and $\nu_e$ can be adjusted accordingly.
-The superheterodyne receiver is adjusted by slowly increasing the ZF-amplifier until a voltage is visible.
+where $\nu_{OSC}$ is produced by a separate oscillator and $\nu_e$ is the beat frequency. It is necessary to regulate the
+initiate frequency down to make it measurable. In addition the selective amplifier is adjusted precisely to $\nu_e$ and therefore takes
+the biggest part in amplification and suppressing other frequencies. Furthermore a demodulator rectifies and smoothes the voltage to make it measurable.
+While $\nu_{ZF}=\SI{552}{\hertz}$, $\nu_{OSC}$ can be set to fixed values and $\nu_e$ can be adjusted accordingly. \\ \\ \noindent
+The superheterodyne receiver is now adjusted by slowly increasing the ZF-amplifier until a voltage is visible.
 The preamplifier is then set up so that the output voltage becomes maximum.
 Then the bridge is adjusted. Then this process is repeated until the maximum ZF-gain is reached.
 \begin{figure}

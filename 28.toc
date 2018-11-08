@@ -3,9 +3,10 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Motivation}{1}{section.1}
 \contentsline {section}{\numberline {2}Theory}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}Spin relative to an external magnetic field}{1}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Electron paramagnetic resonance}{2}{subsection.2.2}
-\contentsline {section}{\numberline {3}Execution}{2}{section.3}
-\contentsline {section}{\numberline {4}Evaluation}{3}{section.4}
-\contentsline {section}{\numberline {5}Discussion}{4}{section.5}
-\contentsline {section}{\nonumberline References}{4}{section*.5}
+\contentsline {subsection}{\numberline {2.1}Realtionship between magnetic moment and orbital angular momentum}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Splitting of the energy levels in an external magnetic field}{1}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Electron Paramagnetic Resonance}{2}{subsection.2.3}
+\contentsline {section}{\numberline {3}Execution}{3}{section.3}
+\contentsline {section}{\numberline {4}Evaluation}{5}{section.4}
+\contentsline {section}{\numberline {5}Discussion}{5}{section.5}
+\contentsline {section}{\nonumberline References}{5}{section*.6}

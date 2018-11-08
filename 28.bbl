@@ -79,38 +79,6 @@
       \verb https://physics.nist.gov/cgi-bin/cuu/Value?mub
       \endverb
     \endentry
-    \entry{4}{online}{}
-      \name{author}{2}{}{%
-        {{hash=1f21eecf20c3bf776452ff7d827e5bdc}{%
-           family={Standards},
-           familyi={S\bibinitperiod},
-           given={National\bibnamedelima Institute},
-           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod},
-           prefix={of},
-           prefixi={o\bibinitperiod}}}%
-        {{hash=e7e767d7c0e58b16e57d3ab16150db80}{%
-           family={Technology},
-           familyi={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{fa26ffc7794d593d12224b7caee2efa5}
-      \strng{fullhash}{fa26ffc7794d593d12224b7caee2efa5}
-      \strng{bibnamehash}{fa26ffc7794d593d12224b7caee2efa5}
-      \strng{authorbibnamehash}{fa26ffc7794d593d12224b7caee2efa5}
-      \strng{authornamehash}{fa26ffc7794d593d12224b7caee2efa5}
-      \strng{authorfullhash}{fa26ffc7794d593d12224b7caee2efa5}
-      \field{sortinit}{S}
-      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{[Online; Stand 20.10.2018]}
-      \field{title}{electron gyromagnetic ratio}
-      \verb{urlraw}
-      \verb https://physics.nist.gov/cgi-bin/cuu/Value?gammae
-      \endverb
-      \verb{url}
-      \verb https://physics.nist.gov/cgi-bin/cuu/Value?gammae
-      \endverb
-    \endentry
     \entry{3}{online}{}
       \name{author}{2}{}{%
         {{hash=1f21eecf20c3bf776452ff7d827e5bdc}{%
